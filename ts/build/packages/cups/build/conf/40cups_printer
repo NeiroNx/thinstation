@@ -6,6 +6,8 @@
 #                    name of the printer driver
 # CUPS_PRINTER_0_DEVICEURI   Workstation printer device (if not specified devices
 #                    are not loaded).
+# CUPS_PRINTER_0_DESCRIPTION Human readable description of printer
+#
 #
 #                     Requirement:
 #                     FileDevice Yes in /etc/cups/cups-files.conf  (by default enabled in thinstation) 
@@ -22,15 +24,18 @@
  # If having trouble with autocreate, keep the name "CUPS_PRINTER_?_NAME" under 15 characters & don't use spaces 
 #Example network printer
 #CUPS_PRINTER_0_NAME="sample network printer 0"
+#CUPS_PRINTER_0_DESCRIPTION="My first printer"
 #CUPS_PRINTER_0_DEVICEURI="socket://ip_address"
 #CUPS_PRINTER_0_DRIVER="drv:///sample.drv/generpcl.ppd"
 
 #Example usb printer
 #CUPS_PRINTER_1_NAME="sample usb printer 1"
+#CUPS_PRINTER_1_DESCRIPTION="My second printer"
 #CUPS_PRINTER_1_DEVICEURI="file:///dev/usb/lp0"
 #CUPS_PRINTER_1_DRIVER="drv:///sample.drv/generpcl.ppd"
 
 #Example lpt printer
 #CUPS_PRINTER_2_NAME="sample lpt printer 2"
+#CUPS_PRINTER_2_DESCRIPTION="Just for test"
 #CUPS_PRINTER_2_DEVICEURI="file:///dev/lp0"
 #CUPS_PRINTER_2_DRIVER="drv:///sample.drv/generpcl.ppd"
